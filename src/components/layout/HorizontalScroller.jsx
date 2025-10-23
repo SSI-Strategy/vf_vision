@@ -11,6 +11,8 @@ const HorizontalScroller = ({ children }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const scrollerRef = useRef(null);
   const isScrollingRef = useRef(false);
+  const touchStartRef = useRef({ x: 0, time: 0, scrollLeft: 0 });
+  const isDraggingRef = useRef(false);
 
   const {
     currentSlide: contextSlide,
@@ -181,6 +183,108 @@ const HorizontalScroller = ({ children }) => {
       }, 800);
     }
   };
+
+  // Touch/swipe handlers with threshold-based snapping
+  useEffect(() => {
+    const scroller = scrollerRef.current;
+    if (!scroller) return;
+
+    const SWIPE_THRESHOLD = 0.25; // 25% of screen width
+    const VELOCITY_THRESHOLD = 0.5; // pixels per millisecond
+
+    const handleStart = (clientX) => {
+      isDraggingRef.current = true;
+      touchStartRef.current = {
+        x: clientX,
+        time: Date.now(),
+        scrollLeft: scroller.scrollLeft
+      };
+    };
+
+    const handleEnd = (clientX) => {
+      if (!isDraggingRef.current) return;
+      isDraggingRef.current = false;
+
+      const touchEnd = {
+        x: clientX,
+        time: Date.now(),
+        scrollLeft: scroller.scrollLeft
+      };
+
+      const deltaX = touchStartRef.current.x - touchEnd.x;
+      const deltaTime = touchEnd.time - touchStartRef.current.time;
+      const velocity = Math.abs(deltaX) / deltaTime;
+
+      const slideWidth = window.innerWidth;
+      const distanceFromStart = Math.abs(touchEnd.scrollLeft - touchStartRef.current.scrollLeft);
+      const thresholdDistance = slideWidth * SWIPE_THRESHOLD;
+
+      // Determine if we should snap to next/prev slide or bounce back
+      let targetSlide = currentSlide;
+
+      if (velocity > VELOCITY_THRESHOLD) {
+        // Fast swipe - advance based on direction
+        if (deltaX > 0 && currentSlide < SLIDES_CONFIG.length - 1) {
+          targetSlide = currentSlide + 1;
+        } else if (deltaX < 0 && currentSlide > 0) {
+          targetSlide = currentSlide - 1;
+        }
+      } else if (distanceFromStart > thresholdDistance) {
+        // Slow swipe but passed threshold
+        if (deltaX > 0 && currentSlide < SLIDES_CONFIG.length - 1) {
+          targetSlide = currentSlide + 1;
+        } else if (deltaX < 0 && currentSlide > 0) {
+          targetSlide = currentSlide - 1;
+        }
+      }
+      // else: bounce back to current slide
+
+      // Snap to target slide
+      isScrollingRef.current = true;
+      setCurrentSlide(targetSlide);
+      scrollToSlide(targetSlide);
+      setTimeout(() => {
+        isScrollingRef.current = false;
+      }, 800);
+    };
+
+    const handleTouchStart = (e) => {
+      handleStart(e.touches[0].clientX);
+    };
+
+    const handleTouchEnd = (e) => {
+      handleEnd(e.changedTouches[0].clientX);
+    };
+
+    const handleMouseDown = (e) => {
+      handleStart(e.clientX);
+    };
+
+    const handleMouseUp = (e) => {
+      handleEnd(e.clientX);
+    };
+
+    const handleMouseLeave = (e) => {
+      if (isDraggingRef.current) {
+        handleEnd(e.clientX);
+      }
+    };
+
+    // Add event listeners
+    scroller.addEventListener('touchstart', handleTouchStart, { passive: true });
+    scroller.addEventListener('touchend', handleTouchEnd, { passive: true });
+    scroller.addEventListener('mousedown', handleMouseDown);
+    scroller.addEventListener('mouseup', handleMouseUp);
+    scroller.addEventListener('mouseleave', handleMouseLeave);
+
+    return () => {
+      scroller.removeEventListener('touchstart', handleTouchStart);
+      scroller.removeEventListener('touchend', handleTouchEnd);
+      scroller.removeEventListener('mousedown', handleMouseDown);
+      scroller.removeEventListener('mouseup', handleMouseUp);
+      scroller.removeEventListener('mouseleave', handleMouseLeave);
+    };
+  }, [currentSlide]);
 
   return (
     <div className="relative w-full h-full">

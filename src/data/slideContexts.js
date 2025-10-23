@@ -46,13 +46,6 @@ export const SLIDE_CONTEXTS = [
         connections: {
           visionDoc: 'Competitive Advantage - Compound Value Effect'
         }
-      },
-      {
-        step: 4,
-        type: 'navigation',
-        title: 'Your Journey Ahead',
-        content: 'Navigate through 8 slides that build the complete case: the market imperative, the strategic vision, competitive advantages, business model transformation, risk mitigation, investment roadmap, and why timing is critical. Each slide will deepen your understanding of how SSI Strategy can leverage Velocity Foundry to become a holistic capability enabler—delivering People, Process, and Tools.',
-        position: 'bottom-right' // Back to right for final context
       }
     ]
   },
@@ -87,7 +80,7 @@ export const SLIDE_CONTEXTS = [
         step: 2,
         type: 'example',
         title: 'AI Makes the Gap Exponential',
-        content: 'Without AI, efficiency gaps are linear—maybe 2-3x. With AI, they become exponential—10x, 50x, 100x. A velocity-native organization completes drug design iterations in 3-6 weeks. Legacy pharma takes 9-12 months. That\'s not a competitive disadvantage—it\'s mathematical impossibility of catching up.',
+        content: 'Without AI, efficiency gaps are linear—maybe 2-3x. With AI, they become exponential—10x, 50x, 100x. Example: Safety Signal Assessment. Legacy process: 2 weeks manual review, 40 hours per signal. Velocity-native: 48-hour automated triage, 4 hours per signal. That\'s 10x faster. A velocity-native organization completes drug design iterations in 3-6 weeks vs. 9-12 months for legacy pharma. That\'s not a competitive disadvantage—it\'s mathematical impossibility of catching up.',
         position: 'right', // Right side, near the Velocity-Native column
         connections: {
           visionDoc: 'Why Now - The 10x Threshold'
@@ -107,20 +100,10 @@ export const SLIDE_CONTEXTS = [
         step: 4,
         type: 'strategy',
         title: 'First-Mover Advantage for SSI',
-        content: 'Most consulting firms are still operating traditional models: people-heavy engagements, PowerPoint deliverables, hourly billing. By becoming the first velocity-native consulting accelerator in life sciences, SSI can capture significant market share before competitors even understand the game has changed.',
+        content: 'Most consulting firms are still operating traditional models: people-heavy engagements, PowerPoint deliverables, hourly billing. By becoming the first velocity-native consulting accelerator in life sciences, SSI can capture significant market share before competitors even understand the game has changed. What if biotech companies received capability building instead of blueprints? What if solutions stayed with the organization instead of walking out the door as tribal knowledge? Traditional consulting\'s value proposition is eroding, creating space for a fundamentally different model.',
         position: 'bottom-right', // Near "The Opportunity" box
         connections: {
           visionDoc: 'The Opportunity - First-mover in AI-enabled consulting'
-        }
-      },
-      {
-        step: 5,
-        type: 'urgency',
-        title: 'Why Consulting Models Are Dying',
-        content: 'What if biotech companies received capability building instead of blueprints? What if solutions stayed with the organization instead of walking out the door as tribal knowledge? What if partners delivered working solutions in weeks, not consulting reports in months? Traditional consulting\'s value proposition is eroding, creating space for a fundamentally different model.',
-        position: 'bottom-left',
-        connections: {
-          visionDoc: 'Market Context - Traditional consulting becoming obsolete'
         }
       }
     ]
@@ -155,15 +138,15 @@ export const SLIDE_CONTEXTS = [
       {
         step: 2,
         type: 'example',
-        title: 'Speed Revolution: The Math',
-        content: 'Traditional consulting engagement: 3-6 months for requirements, 6-12 months for vendor selection, 12-24 months for implementation. Total: 2-3 years. Velocity Foundry: 2 weeks for discovery, 4-6 weeks for MVP delivery, continuous iteration. Total: Working solution in under 2 months. That\'s 15-20x faster—and speed creates platform lock-in. Clients become dependent on the platform, generating recurring license revenue long after implementation. SSI earns while consultants sleep.',
+        title: 'Real Deliverable: Regulatory Submission Dashboard',
+        content: 'Concrete example: FDA/EMA submission tracking system with automated document assembly, audit trails, and stakeholder notifications. Traditional approach: 6-9 months for vendor selection and implementation. Velocity Foundry: 4-6 weeks from discovery to deployment. Built once for Client A, then reused and customized for Clients B-Z. That\'s 15-20x faster delivery—and speed creates platform value. Clients become dependent on the platform, generating recurring license revenue long after implementation.',
         position: 'bottom-left' // Near Speed Revolution card
       },
       {
         step: 3,
         type: 'theory',
-        title: 'Platform Power',
-        content: 'The Velocity Forge platform enables consultants to build through conversation. No coding expertise required. The platform has Golden Paths (pre-configured best practices), compliance frameworks baked in, and AI assistance at every step. It\'s like having a world-class dev team in your pocket.',
+        title: 'Platform Power + Reusable Assets',
+        content: 'The Velocity Forge platform enables consultants to build through conversation. No coding expertise required. Golden Paths provide pre-configured best practices, compliance frameworks are baked in, and AI assists at every step. Every component built for one client becomes a reusable asset: GxP-compliant approval workflows, protocol deviation tracking, regulatory submission templates. The platform gets smarter and faster with each engagement—like having a world-class dev team that learns and compounds knowledge.',
         position: 'bottom', // Near Platform Power card
         connections: {
           visionDoc: 'Platform Power - Enable consultants to build enterprise applications'
@@ -171,16 +154,6 @@ export const SLIDE_CONTEXTS = [
       },
       {
         step: 4,
-        type: 'insight',
-        title: 'Reusable Assets',
-        content: 'Every component built for one client becomes a reusable asset. Need a GxP-compliant approval workflow? Built it for Client A, now it\'s a platform capability. Protocol deviation tracking? Built for Client B, available for everyone. The platform gets smarter and faster with each engagement.',
-        position: 'bottom-right', // Near Outcome Focus card
-        connections: {
-          visionDoc: 'Business Model - Asset Appreciation'
-        }
-      },
-      {
-        step: 5,
         type: 'vision',
         title: 'The Core Promise',
         content: 'By leveraging Velocity Foundry, SSI Strategy transforms from a firm that recommends digital transformation to one that delivers it—instantly, repeatedly, and profitably. Instantly through AI-enabled development. Repeatedly through reusable IP. Profitably through exponential revenue growth with declining delivery costs.',
@@ -202,7 +175,7 @@ export const SLIDE_CONTEXTS = [
         step: 0,
         type: 'intro',
         title: 'Three Defensible Moats',
-        content: 'Building sustainable competitive advantage requires more than just being first. The strategy creates three compounding moats: the Velocity Forge Platform (technical moat), Compound Value Effect (network moat), and Industry-Specific IP (domain moat). Together, they become nearly impossible to replicate.',
+        content: 'Building sustainable competitive advantage requires more than just being first. The strategy creates three compounding moats: the Velocity Forge Platform (technical moat), Compound Value Effect (network moat), and Industry-Specific IP (domain moat). Together, they become nearly impossible to replicate. Competitors face a triple challenge: Build the technical platform (years), accumulate client engagements for network effects (years), and develop deep life sciences domain expertise (years). By the time they start, the first mover is already compounding.',
         position: 'top-right',
         connections: {
           visionDoc: 'Competitive Advantage - Three Pillars'
@@ -222,7 +195,7 @@ export const SLIDE_CONTEXTS = [
         step: 2,
         type: 'concept',
         title: 'Pillar 2: Compound Value Effect',
-        content: 'Network effects in consulting. Each engagement strengthens the platform. Solutions become reusable assets across clients. The value multiplies exponentially, not linearly. Competitors starting from zero can\'t catch up—they\'re always 20, 50, 100 clients behind in accumulated capability.',
+        content: 'Network effects in consulting. Each engagement strengthens the platform. Solutions become reusable assets across clients. The value multiplies exponentially, not linearly. Competitors starting from zero can\'t catch up—they\'re always 20, 50, 100 clients behind in accumulated capability. This is the Solve Forever Protocol in action: every problem solved once becomes a platform capability forever.',
         position: 'top',
         connections: {
           visionDoc: 'Compound Value Effect'
@@ -232,7 +205,7 @@ export const SLIDE_CONTEXTS = [
         step: 3,
         type: 'concept',
         title: 'Pillar 3: Industry-Specific IP',
-        content: 'Deep life sciences patterns, workflows, and compliance frameworks become the domain moat. GxP compliance, FDA submission templates, clinical trial protocols, pharmacovigilance workflows—this specialized knowledge codified in the platform is extraordinarily valuable and hard to replicate.',
+        content: 'Deep life sciences patterns, workflows, and compliance frameworks become the domain moat. Example: Quality Event Listening Post for manufacturing. A real-time quality monitoring system that captures deviations, routes to owners, tracks resolution, and generates reports—all GxP-compliant by default. First client: full build (8 weeks). Subsequent clients: configure and customize (1-2 weeks). The reuse compounds. This specialized knowledge codified in the platform is extraordinarily valuable and hard to replicate.',
         position: 'right',
         connections: {
           visionDoc: 'Industry-Specific IP - Defensible moats through specialized knowledge'
@@ -242,28 +215,11 @@ export const SLIDE_CONTEXTS = [
         step: 4,
         type: 'example',
         title: 'The 1→5→50 Progression',
-        content: 'Client 1: Build everything from scratch, 100% effort → +1 solution in platform. Client 5: Reuse 80% of components, 20% effort → +5 new solutions. Client 20: Reuse 95% of components, 5% effort → +50 new solutions. Delivery cost drops 95% while capability multiplies 50x.',
-        position: 'bottom-left',
+        content: 'Client 1: Build everything from scratch, 100% effort → +1 solution in platform. Client 5: Reuse 80% of components, 20% effort → +5 new solutions. Client 20: Reuse 95% of components, 5% effort → +50 new solutions. Delivery cost drops 95% while capability multiplies 50x. No reinventing wheels. No tribal knowledge. No starting from scratch. Just systematic accumulation of executable, reusable, valuable IP.',
+        position: 'bottom',
         connections: {
           visionDoc: 'The Compounding Effect'
         }
-      },
-      {
-        step: 5,
-        type: 'theory',
-        title: 'Platform Thinking at Scale',
-        content: 'This is the Solve Forever Protocol in action. Every problem solved once becomes a platform capability forever. No reinventing wheels. No tribal knowledge. No starting from scratch. Just systematic accumulation of executable, reusable, valuable IP.',
-        position: 'bottom',
-        connections: {
-          velocityFramework: 'Solve Forever Protocol'
-        }
-      },
-      {
-        step: 6,
-        type: 'insight',
-        title: 'Why This Is Defensible',
-        content: 'Competitors face a triple challenge: (1) Build the technical platform (years), (2) Accumulate client engagements to create network effects (years), (3) Develop deep life sciences domain expertise (years). By the time they start, the first mover is already compounding. The moat widens with every client.',
-        position: 'bottom-right'
       }
     ]
   },
@@ -296,8 +252,8 @@ export const SLIDE_CONTEXTS = [
       {
         step: 2,
         type: 'example',
-        title: 'Margin Expansion Through AI',
-        content: 'Traditional engagement: 5 consultants × 3 months × $15k/month = $225k revenue, 80% labor cost = $45k margin (20%). Velocity Foundry: 2 consultants × 3 weeks × AI platform = $150k revenue, 40% labor cost = $90k margin (60%). Lower price for client, 2x profit margin for SSI.',
+        title: 'Margin Expansion: Real Numbers',
+        content: 'Traditional engagement: 100 units of effort, 80% labor cost = 20% margin. Velocity Foundry: 30 units of effort (AI assistance), 40% labor cost = 60% margin. Same value delivered to client, 3x profit margin for SSI. As reuse increases, the 30 units drops to 10 units (90% reuse), pushing margins even higher. Lower delivery costs with maintained or increased pricing creates exponential margin expansion.',
         position: 'left',
         connections: {
           visionDoc: 'Higher Margins - Reduce delivery costs through AI'
@@ -306,8 +262,8 @@ export const SLIDE_CONTEXTS = [
       {
         step: 3,
         type: 'insight',
-        title: 'Recurring Revenue',
-        content: 'Platform licenses and maintenance create predictable, recurring streams. Instead of feast-or-famine project cycles, this builds annuity-style revenue. A $2M implementation becomes $200k/year in perpetual license + maintenance fees. Over 5 years, that\'s $3M total vs $2M one-time.',
+        title: 'Recurring Revenue + IP Library Value',
+        content: 'Platform licenses and maintenance create predictable, recurring streams—annuity-style revenue vs. feast-or-famine project cycles. Unlike traditional consulting where knowledge walks out the door, every solution adds to a permanent, appreciating IP library. Implementation engagement generates license + maintenance fees that compound over time. The library\'s value grows: Year 1 (50 components) → Year 3 (500 components) → Year 5 (5,000+ components). This becomes a sellable asset or licensing goldmine.',
         position: 'right',
         connections: {
           visionDoc: 'Recurring Revenue - Platform licenses and maintenance'
@@ -315,16 +271,6 @@ export const SLIDE_CONTEXTS = [
       },
       {
         step: 4,
-        type: 'theory',
-        title: 'The IP Library as Appreciating Asset',
-        content: 'Unlike traditional consulting where knowledge walks out the door, every solution adds to a permanent, appreciating IP library. The library\'s value compounds: Year 1 (50 components) → Year 3 (500 components) → Year 5 (5,000+ components). This becomes a sellable asset or licensing goldmine.',
-        position: 'bottom-right',
-        connections: {
-          visionDoc: 'Asset Appreciation - Each client solution adds to reusable IP'
-        }
-      },
-      {
-        step: 5,
         type: 'strategy',
         title: 'Breaking the Headcount Ceiling',
         content: 'With traditional billing, doubling revenue means doubling headcount. With Velocity Foundry, doubling revenue might mean adding 20% headcount because the platform does the heavy lifting. The business becomes asset-based (platform IP) rather than labor-based (billable hours). Margins expand, not compress.',
@@ -371,37 +317,27 @@ export const SLIDE_CONTEXTS = [
       {
         step: 3,
         type: 'insight',
-        title: 'Consultant Oversight + AI Acceleration',
-        content: 'The approach maintains expert human oversight while AI handles implementation. Consultants define requirements, validate outputs, ensure quality. AI generates code, runs tests, handles deployment. This preserves SSI\'s consulting excellence while eliminating implementation bottlenecks.',
-        position: 'bottom-left',
+        title: 'Consultant Oversight + Systems Over Individuals',
+        content: 'The approach maintains expert human oversight while AI handles implementation. Consultants define requirements, validate outputs, ensure quality. AI generates code, runs tests, handles deployment. This preserves SSI\'s consulting excellence while eliminating implementation bottlenecks. Traditional consulting depends on heroic individuals with tribal knowledge—when they leave, capability walks out the door. Velocity Foundry codifies knowledge into systems. Consultants become more valuable (they build platforms, not projects) while the firm becomes less dependent on any individual.',
+        position: 'bottom',
         connections: {
-          visionDoc: 'Maintains consultant oversight while accelerating delivery'
-        }
-      },
-      {
-        step: 4,
-        type: 'strategy',
-        title: 'Systems Over Heroic Individuals',
-        content: 'Traditional consulting depends on heroic individuals with tribal knowledge. When they leave, capability walks out the door. Velocity Foundry codifies knowledge into systems. Consultants become more valuable (they build platforms, not projects) while the firm becomes less dependent on any individual.',
-        position: 'bottom-right',
-        connections: {
-          visionDoc: 'Reduces key person dependencies through codified knowledge',
+          visionDoc: 'Maintains consultant oversight while accelerating delivery',
           velocityFramework: 'Systems Thinking'
         }
       }
     ]
   },
 
-  // Slide 7: Investment Journey
+  // Slide 7: Making It Real - The Execution Roadmap
   {
     slideId: 6,
-    slideName: 'Investment Journey',
+    slideName: 'Making It Real',
     contexts: [
       {
         step: 0,
         type: 'intro',
-        title: 'Three Phases to Transformation',
-        content: 'This isn\'t a big-bang approach. The plan systematically builds capability through three phases over 18 months: Foundation (6-9 months), Scale (9-15 months), Productize (15-18 months). Each phase delivers measurable value while setting up the next.',
+        title: 'Three Parallel Tracks to Q4 Readiness',
+        content: 'This isn\'t a big-bang approach. Three work streams run in parallel and sequentially from Q1-Q4 2026: Track 1 (Platform) is sequential—evaluate, select, build. Track 2 (Training) runs parallel from Q1—because mindset transformation takes time. Track 3 (Validation) starts Q2—lighthouse clients prove the model. By Q4 2026, we\'re client-ready with trained Velocity Architects, a production Forge, and proven success stories.',
         position: 'top-right',
         connections: {
           visionDoc: 'The Investment Ask - Three phases'
@@ -410,8 +346,8 @@ export const SLIDE_CONTEXTS = [
       {
         step: 1,
         type: 'concept',
-        title: 'Phase 1: Foundation (6-9 months)',
-        content: 'Build the platform core and prove the model with 2-3 lighthouse clients. Develop initial Golden Paths library. Begin team enablement. Deliverable: Working platform with proven client success stories, initial IP library, trained core team. Risk: Contained to pilot projects.',
+        title: 'Track 1: Platform Selection & Build (Sequential)',
+        content: 'Q1 2026: Evaluate Master platform vendors (8 weeks) against criteria—GxP compliance framework, AI-assisted development, rapid deployment capability, enterprise security, regulatory audit trails, extensibility. Select vendor and establish partnership (2 weeks). Q2 2026: Configure the Forge environment (8-10 weeks). Establish Golden Paths architecture. Create first 5 solution templates: Protocol Deviation Tracking, Regulatory Submission Management, Safety Signal Assessment, Quality Event Listening Post, Audit Management System. Q3-Q4: Expand template library through lighthouse client engagements.',
         position: 'top-left',
         connections: {
           visionDoc: 'Phase 1 - Platform foundation and pilot'
@@ -420,51 +356,41 @@ export const SLIDE_CONTEXTS = [
       {
         step: 2,
         type: 'concept',
-        title: 'Phase 2: Scale (9-15 months)',
-        content: 'Full consulting team adoption. Expand client base to 10-15 engagements. Platform refinement based on real-world usage. IP library accelerates through compound effects. Deliverable: Platform at scale, significant IP library, full team capability, growing recurring revenue.',
+        title: 'Track 2: Developing Velocity Architects (Parallel from Q1)',
+        content: 'This runs parallel to platform work because mindset transformation takes time. Q1-Q2: Design curriculum covering three dimensions: (1) Mindset - From recommendations to delivery, from projects to systems, from linear to exponential thinking. (2) Methods - Solve Forever Protocol, capability assessment, platform thinking, People/Process/Tools framework. (3) Tools - Forge platform mastery, AI-assisted development, Golden Paths application. Q2-Q3: Deliver training program through workshop series plus hands-on platform work. Q3-Q4: Certification process—each Velocity Architect delivers a lighthouse project demonstrating capability thinking and platform delivery.',
         position: 'top',
         connections: {
-          visionDoc: 'Phase 2 - Scale to full team enablement'
+          visionDoc: 'Developing Velocity Architects'
         }
       },
       {
         step: 3,
-        type: 'concept',
-        title: 'Phase 3: Productize (15-18 months)',
-        content: 'License the platform directly to clients. Establish ecosystem partnerships. Achieve market leadership position. Recurring revenue becomes dominant. Deliverable: Platform-as-a-product, 30+ client success stories, industry recognition, predictable recurring revenue model.',
-        position: 'top-right',
+        type: 'example',
+        title: 'Track 3: Lighthouse Client Validation (From Q2)',
+        content: 'Lighthouse clients prove speed, reusability, and compounding value. Client 1 (Q2): Protocol Deviation Tracker—proves we can deliver GxP-compliant solutions in <8 weeks. Client 2 (Q3): Regulatory Dashboard—proves reusability (60-70% component reuse from foundation templates). Client 3 (Q3): Safety Signal Assessment—proves compounding (80%+ reuse, 1-2 week delivery). Success criteria per engagement: <8 week delivery, high client satisfaction, platform capability capture and documentation.',
+        position: 'bottom-left',
         connections: {
-          visionDoc: 'Phase 3 - Productize and license platform'
+          visionDoc: 'Lighthouse client strategy'
         }
       },
       {
         step: 4,
-        type: 'metrics',
-        title: 'Success Metrics',
-        content: 'Four key metrics track transformation progress (note: rough estimates requiring further research to validate): (1) Time-to-value reduction: 70%+ faster delivery. (2) Consultant productivity: 3-5x more deliverables per consultant. (3) Client satisfaction: NPS increase of 20+ points. (4) Financial: 40%+ margin improvement within 18 months.',
-        position: 'bottom-left',
+        type: 'concept',
+        title: 'Example Foundational Templates',
+        content: 'The specific templates will be selected based on client input and needs, but example candidates include: (1) Protocol Deviation Tracking - Clinical trial compliance workflow. (2) Regulatory Submission Management - FDA/EMA document pipeline. (3) Safety Signal Assessment - Adverse event monitoring and triage. (4) Quality Event Listening Post - Manufacturing quality monitoring. (5) Audit Management System - Inspection readiness and tracking. Each lighthouse client engagement will define and build 2-3 templates based on their specific challenges. By Q4, we aim for 8-10 proven, reusable solution patterns informed by real client needs.',
+        position: 'bottom',
         connections: {
-          visionDoc: 'Success Metrics'
+          visionDoc: 'Foundational solution templates'
         }
       },
       {
         step: 5,
-        type: 'theory',
-        title: '90-Day Transformation Cycles',
-        content: 'Following the Velocity Framework methodology, the approach works in 90-day cycles. Each cycle delivers measurable capability improvement. Every 90 days: assess, adjust, accelerate. This prevents multi-year transformations that never deliver value. Progress compounds quarterly.',
-        position: 'bottom',
-        connections: {
-          velocityFramework: '90-Day Transformation Cycles'
-        }
-      },
-      {
-        step: 6,
-        type: 'insight',
-        title: 'Exponential Returns',
-        content: 'What if returns compound rather than accumulate linearly? The hypothesis: Phase 1 builds foundation capabilities. Phase 2 leverages that foundation to create multiplied value. Phase 3 compounds on both previous phases for potentially exponential returns. This pattern—if validated—transforms how investment value is calculated. Early investment wouldn\'t just deliver immediate returns, but create compounding infrastructure for accelerating value creation.',
+        type: 'metrics',
+        title: 'Q4 2026 Readiness: What We\'ve Built',
+        content: 'Platform: Production Forge with 8-10 proven templates, validated Golden Paths, full GxP compliance framework. People: 5-8 certified Velocity Architects trained in mindset, methods, and tools. Proof: 3 lighthouse success stories demonstrating speed (<8 weeks), quality, and client satisfaction. Process: Established delivery methodology—discovery → build → deploy in 6-8 weeks avg. Economics: 3x margin improvement demonstrated through lighthouse projects, recurring revenue model validated. Pipeline: Commercial engagements starting Q4 2026, sales process refined through lighthouse learnings.',
         position: 'bottom-right',
         connections: {
-          visionDoc: 'The returns aren\'t linear—they\'re exponential'
+          visionDoc: 'Success Metrics'
         }
       }
     ]
@@ -518,22 +444,12 @@ export const SLIDE_CONTEXTS = [
       {
         step: 4,
         type: 'urgency',
-        title: 'The 10x Threshold',
-        content: 'When velocity-native organizations achieve 10x speed advantage, catching up becomes mathematically impossible. Drug design: 3-6 weeks vs 9-12 months. Protocol optimization: 5 days vs 6 months. Regulatory prep: 48 hours vs 8 weeks. The industry is approaching that threshold NOW.',
+        title: 'The 10x Threshold & The Choice',
+        content: 'When velocity-native organizations achieve 10x speed advantage, catching up becomes mathematically impossible. Drug design: 3-6 weeks vs 9-12 months. Protocol optimization: 5 days vs 6 months. Regulatory prep: 48 hours vs 8 weeks. The industry is approaching that threshold NOW. The choice isn\'t "transform or stay the same." It\'s "transform or become irrelevant." Clients will flock to velocity-native partners who deliver outcomes. Talent will leave for organizations doing meaningful work without friction. The market will consolidate around velocity leaders. The best time to achieve velocity was yesterday. The second best time is Monday morning.',
+        quote: 'The best time to achieve velocity was yesterday. The second best time is Monday morning.',
         position: 'bottom',
         connections: {
           visionDoc: 'At 10x differential, catching up becomes mathematically impossible'
-        }
-      },
-      {
-        step: 5,
-        type: 'vision',
-        title: 'The Transformation Isn\'t Optional',
-        content: 'The choice isn\'t "transform or stay the same." It\'s "transform or become irrelevant." Clients will flock to velocity-native partners who deliver outcomes. Talent will leave for organizations doing meaningful work without friction. The market will consolidate around velocity leaders.',
-        quote: 'The best time to achieve velocity was yesterday. The second best time is Monday morning.',
-        position: 'bottom-right',
-        connections: {
-          visionDoc: 'The transformation isn\'t optional'
         }
       }
     ]
