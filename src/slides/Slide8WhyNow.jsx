@@ -38,13 +38,13 @@ const Slide8WhyNow = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeInUp}
-          className="text-center mb-16"
+          className="text-center mb-6"
         >
-          <div className="inline-flex items-center gap-2 bg-ssi-sunrise/20 border border-ssi-sunrise rounded-full px-6 py-2 mb-6">
+          <div className="inline-flex items-center gap-2 bg-ssi-sunrise/20 border border-ssi-sunrise rounded-full px-6 py-2 mb-4">
             <AlertTriangle className="w-5 h-5 text-ssi-sunrise" />
             <span className="text-ssi-sunrise font-semibold">Urgency</span>
           </div>
-          <h2 className="text-6xl md:text-7xl font-bold text-white mb-4">
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-3">
             Why Now?
           </h2>
           <p className="text-2xl text-ssi-turquoise max-w-3xl mx-auto">
@@ -58,10 +58,10 @@ const Slide8WhyNow = () => {
           whileInView="visible"
           viewport={{ once: true }}
           variants={staggerChildren}
-          className="grid md:grid-cols-2 gap-6 mb-16"
+          className="grid md:grid-cols-2 gap-4 mb-6"
         >
-          <motion.div variants={fadeInUp}>
-            <Card className="h-full hover:border-ssi-ocean/50 bg-ssi-ocean/5">
+          <motion.div variants={fadeInUp} className="h-full">
+            <Card className="h-full hover:border-ssi-ocean/50 bg-ssi-ocean/5 flex flex-col min-h-[140px]">
               <div className="flex items-center gap-4 mb-4">
                 <div className="bg-ssi-ocean p-3 rounded-xl">
                   <Zap className="w-6 h-6 text-white" />
@@ -74,8 +74,8 @@ const Slide8WhyNow = () => {
             </Card>
           </motion.div>
 
-          <motion.div variants={fadeInUp}>
-            <Card className="h-full hover:border-ssi-turquoise/50 bg-ssi-turquoise/5">
+          <motion.div variants={fadeInUp} className="h-full">
+            <Card className="h-full hover:border-ssi-turquoise/50 bg-ssi-turquoise/5 flex flex-col min-h-[140px]">
               <div className="flex items-center gap-4 mb-4">
                 <div className="bg-ssi-turquoise p-3 rounded-xl">
                   <TrendingUp className="w-6 h-6 text-white" />
@@ -88,8 +88,8 @@ const Slide8WhyNow = () => {
             </Card>
           </motion.div>
 
-          <motion.div variants={fadeInUp}>
-            <Card className="h-full hover:border-ssi-stone/50 bg-ssi-stone/5">
+          <motion.div variants={fadeInUp} className="h-full">
+            <Card className="h-full hover:border-ssi-stone/50 bg-ssi-stone/5 flex flex-col min-h-[140px]">
               <div className="flex items-center gap-4 mb-4">
                 <div className="bg-ssi-stone p-3 rounded-xl">
                   <Clock className="w-6 h-6 text-white" />
@@ -102,8 +102,8 @@ const Slide8WhyNow = () => {
             </Card>
           </motion.div>
 
-          <motion.div variants={fadeInUp}>
-            <Card className="h-full hover:border-ssi-sunrise/50 bg-ssi-sunrise/5">
+          <motion.div variants={fadeInUp} className="h-full">
+            <Card className="h-full hover:border-ssi-sunrise/50 bg-ssi-sunrise/5 flex flex-col min-h-[140px]">
               <div className="flex items-center gap-4 mb-4">
                 <div className="bg-ssi-sunrise p-3 rounded-xl">
                   <AlertTriangle className="w-6 h-6 text-white" />
@@ -123,13 +123,13 @@ const Slide8WhyNow = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-ssi-midnight/50 border border-ssi-sunrise/30 rounded-2xl p-8 mb-16"
+          className="bg-ssi-midnight/50 border border-ssi-sunrise/30 rounded-2xl p-4 mb-6"
         >
-          <h3 className="text-3xl font-bold text-white mb-8 text-center">
+          <h3 className="text-2xl font-bold text-white mb-4 text-center">
             The 10x Threshold
           </h3>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="grid md:grid-cols-2 gap-6 mb-4">
             <div>
               <div className="text-ssi-stone mb-4 font-semibold">Legacy Organizations</div>
               <div className="space-y-3">
@@ -180,13 +180,13 @@ const Slide8WhyNow = () => {
           transition={{ delay: 0.4, duration: 0.6 }}
           className="text-center"
         >
-          <div className="bg-gradient-to-r from-ssi-ocean/10 via-ssi-turquoise/10 to-ssi-sunrise/10 border-2 border-ssi-ocean/50 rounded-3xl p-12">
+          <div className="bg-gradient-to-r from-ssi-ocean/10 via-ssi-turquoise/10 to-ssi-sunrise/10 border-2 border-ssi-ocean/50 rounded-3xl p-8">
             <motion.h3
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.6 }}
-              className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight"
+              className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight"
             >
               The transformation <span className="text-ssi-sunrise">isn't optional</span>
             </motion.h3>
@@ -196,7 +196,7 @@ const Slide8WhyNow = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.8 }}
-              className="text-2xl md:text-3xl text-ssi-turquoise mb-8 font-light italic"
+              className="text-xl md:text-2xl text-ssi-turquoise mb-6 font-light italic"
             >
               "The best time to achieve velocity was yesterday.<br />
               The second best time is Monday morning."
@@ -222,7 +222,7 @@ const Slide8WhyNow = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 1.2 }}
-          className="mt-12 text-center text-ssi-stone/50 text-sm"
+          className="mt-6 text-center text-ssi-stone/50 text-sm"
         >
           Press ← to review or use progress dots to navigate
         </motion.div>

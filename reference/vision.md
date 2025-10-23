@@ -44,4 +44,4 @@
 - First-mover advantage in establishing the de facto platform
 
 ## The Compelling One-Liner
-*"We're transforming SSI Strategy from a consulting firm that recommends digital transformation to one that delivers it - instantly, repeatedly, and profitably."*
+*"We could be transforming SSI Strategy from a consulting firm that recommends digital transformation to one that delivers it - instantly, repeatedly, and profitably."*

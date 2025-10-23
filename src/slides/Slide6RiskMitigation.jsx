@@ -13,13 +13,13 @@ const Slide6RiskMitigation = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeInUp}
-          className="text-center mb-16"
+          className="text-center mb-6"
         >
-          <div className="inline-flex items-center gap-2 bg-ssi-turquoise/20 border border-ssi-turquoise rounded-full px-6 py-2 mb-6">
+          <div className="inline-flex items-center gap-2 bg-ssi-turquoise/20 border border-ssi-turquoise rounded-full px-6 py-2 mb-4">
             <Shield className="w-5 h-5 text-ssi-turquoise" />
             <span className="text-ssi-turquoise font-semibold">Risk Mitigation & Governance</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">
             Built on Solid Foundation
           </h2>
           <p className="text-xl text-ssi-stone max-w-3xl mx-auto">
@@ -33,21 +33,21 @@ const Slide6RiskMitigation = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-16"
+          className="mb-6"
         >
-          <div className="bg-ssi-midnight/50 border border-ssi-ocean/30 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-8 text-center">
+          <div className="bg-ssi-midnight/50 border border-ssi-ocean/30 rounded-2xl p-6">
+            <h3 className="text-xl font-bold text-white mb-6 text-center">
               Master Service Platform Architecture
             </h3>
 
-            <div className="space-y-4">
+            <div className="space-y-3">
               {/* Layer 4 - Applications */}
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.1 }}
-                className="bg-gradient-to-r from-ssi-sunrise/20 to-ssi-sunrise/10 border border-ssi-sunrise/50 rounded-xl p-6"
+                className="bg-gradient-to-r from-ssi-sunrise/20 to-ssi-sunrise/10 border border-ssi-sunrise/50 rounded-xl p-4"
               >
                 <div className="flex items-center gap-4">
                   <div className="bg-ssi-sunrise p-3 rounded-lg">
@@ -66,7 +66,7 @@ const Slide6RiskMitigation = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="bg-gradient-to-r from-ssi-turquoise/20 to-ssi-turquoise/10 border border-ssi-turquoise/50 rounded-xl p-6"
+                className="bg-gradient-to-r from-ssi-turquoise/20 to-ssi-turquoise/10 border border-ssi-turquoise/50 rounded-xl p-4"
               >
                 <div className="flex items-center gap-4">
                   <div className="bg-ssi-turquoise p-3 rounded-lg">
@@ -85,7 +85,7 @@ const Slide6RiskMitigation = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 }}
-                className="bg-gradient-to-r from-ssi-ocean/20 to-ssi-ocean/10 border border-ssi-ocean/50 rounded-xl p-6"
+                className="bg-gradient-to-r from-ssi-ocean/20 to-ssi-ocean/10 border border-ssi-ocean/50 rounded-xl p-4"
               >
                 <div className="flex items-center gap-4">
                   <div className="bg-ssi-ocean p-3 rounded-lg">
@@ -104,7 +104,7 @@ const Slide6RiskMitigation = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
-                className="bg-gradient-to-r from-ssi-midnight to-ssi-midnight/50 border-2 border-ssi-turquoise rounded-xl p-6"
+                className="bg-gradient-to-r from-ssi-midnight to-ssi-midnight/50 border-2 border-ssi-turquoise rounded-xl p-4"
               >
                 <div className="flex items-center gap-4">
                   <div className="bg-ssi-turquoise p-3 rounded-lg">
@@ -126,7 +126,7 @@ const Slide6RiskMitigation = () => {
           whileInView="visible"
           viewport={{ once: true }}
           variants={staggerChildren}
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid md:grid-cols-2 lg:grid-cols-4 gap-4"
         >
           <motion.div variants={fadeInUp}>
             <Card className="h-full hover:border-ssi-turquoise/50">
@@ -199,9 +199,9 @@ const Slide6RiskMitigation = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.5 }}
-          className="mt-12 bg-ssi-ocean/10 border border-ssi-ocean/30 rounded-2xl p-6 text-center"
+          className="mt-6 bg-ssi-ocean/10 border border-ssi-ocean/30 rounded-2xl p-4 text-center"
         >
-          <p className="text-lg text-white">
+          <p className="text-base text-white">
             <span className="text-ssi-turquoise font-semibold">Compliance infrastructure enables speed</span>, not prevents it.<br />
             <span className="text-ssi-stone text-sm">Systems &gt; Heroic individuals</span>
           </p>

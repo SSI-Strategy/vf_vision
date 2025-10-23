@@ -9,24 +9,24 @@ const Slide2MarketImperative = () => {
   return (
     <Slide className="bg-gradient-to-br from-ssi-black to-ssi-midnight/50">
       <div className="max-w-7xl w-full">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={fadeInUp}
-          className="text-center mb-16"
-        >
-          <div className="inline-flex items-center gap-2 bg-ssi-sunrise/20 border border-ssi-sunrise/50 rounded-full px-6 py-2 mb-6">
-            <AlertCircle className="w-5 h-5 text-ssi-sunrise" />
-            <span className="text-ssi-sunrise font-semibold">Market Imperative</span>
-          </div>
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">
-            The Great Divergence
-          </h2>
-          <p className="text-xl text-ssi-stone max-w-3xl mx-auto">
-            Two species emerging: velocity-native vs. legacy organizations
-          </p>
-        </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeInUp}
+            className="text-center mb-8"
+          >
+            <div className="inline-flex items-center gap-2 bg-ssi-sunrise/20 border border-ssi-sunrise/50 rounded-full px-6 py-2 mb-6">
+              <AlertCircle className="w-5 h-5 text-ssi-sunrise" />
+              <span className="text-ssi-sunrise font-semibold">The Market Context</span>
+            </div>
+            <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">
+              The 10-Year Window
+            </h2>
+            <p className="text-xl text-ssi-stone max-w-3xl mx-auto">
+              Two species are emerging: velocity-native vs. legacy organizations
+            </p>
+          </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Traditional Pharma */}
@@ -35,8 +35,9 @@ const Slide2MarketImperative = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={slideInLeft}
+            className="h-full"
           >
-            <Card className="h-full bg-ssi-stone/10 border-ssi-stone/30">
+            <Card className="h-full bg-ssi-stone/10 border-ssi-stone/30 flex flex-col min-h-[500px]">
               <div className="mb-6">
                 <h3 className="text-3xl font-bold text-ssi-stone mb-2">
                   Traditional Pharma
@@ -44,7 +45,7 @@ const Slide2MarketImperative = () => {
                 <p className="text-ssi-stone/70">People-heavy blueprints</p>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-4 flex-grow">
                 <div className="flex items-center justify-between p-4 bg-ssi-black/30 rounded-lg">
                   <span className="text-ssi-sand">Efficiency</span>
                   <span className="text-4xl font-bold text-ssi-stone">
@@ -68,7 +69,7 @@ const Slide2MarketImperative = () => {
                 </div>
               </div>
 
-              <div className="mt-6 p-4 bg-red-900/20 border border-red-500/30 rounded-lg">
+              <div className="mt-auto pt-6 p-4 bg-red-900/20 border border-red-500/30 rounded-lg">
                 <p className="text-sm text-red-300">
                   "Talent hemorrhaging to velocity organizations"
                 </p>
@@ -82,8 +83,9 @@ const Slide2MarketImperative = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={slideInRight}
+            className="h-full"
           >
-            <Card className="h-full bg-gradient-to-br from-ssi-ocean/20 to-ssi-turquoise/20 border-ssi-turquoise/50 relative overflow-hidden">
+            <Card className="h-full bg-gradient-to-br from-ssi-ocean/20 to-ssi-turquoise/20 border-ssi-turquoise/50 relative overflow-hidden flex flex-col min-h-[500px]">
               <div className="absolute top-0 right-0 p-2">
                 <TrendingUp className="w-8 h-8 text-ssi-turquoise" />
               </div>
@@ -95,7 +97,7 @@ const Slide2MarketImperative = () => {
                 <p className="text-ssi-turquoise">AI-enabled operations</p>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-4 flex-grow">
                 <div className="flex items-center justify-between p-4 bg-ssi-ocean/20 rounded-lg border border-ssi-ocean/30">
                   <span className="text-white">Efficiency</span>
                   <span className="text-4xl font-bold text-ssi-turquoise">
@@ -120,7 +122,7 @@ const Slide2MarketImperative = () => {
                 </div>
               </div>
 
-              <div className="mt-6 p-4 bg-ssi-turquoise/20 border border-ssi-turquoise/50 rounded-lg">
+              <div className="mt-auto pt-6 p-4 bg-ssi-turquoise/20 border border-ssi-turquoise/50 rounded-lg">
                 <p className="text-sm text-ssi-turquoise font-semibold">
                   "AI makes the gap exponential, not linear"
                 </p>
@@ -138,10 +140,11 @@ const Slide2MarketImperative = () => {
         >
           <div className="inline-block bg-ssi-midnight/50 border border-ssi-ocean/30 rounded-xl p-6">
             <p className="text-ssi-sunrise text-lg font-semibold mb-2">
-              First-mover advantage in AI-enabled consulting
+              The Opportunity
             </p>
             <p className="text-ssi-stone text-sm">
-              Capture significant market share before competitors adapt
+              First-mover advantage in AI-enabled consulting for life sciences —
+              capture market share while traditional models still dominate
             </p>
           </div>
         </motion.div>

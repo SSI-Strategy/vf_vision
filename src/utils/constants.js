@@ -63,5 +63,6 @@ export const SLIDES_CONFIG = [
   { id: 5, title: "Business Model" },
   { id: 6, title: "Risk Mitigation" },
   { id: 7, title: "Investment Journey" },
-  { id: 8, title: "Why Now" }
+  { id: 8, title: "Why Now" },
+  { id: 9, title: "The Choice" }
 ];

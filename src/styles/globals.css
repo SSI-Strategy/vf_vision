@@ -29,6 +29,7 @@ body {
 /* Custom scrollbar for horizontal scroll */
 ::-webkit-scrollbar {
   height: 8px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -41,6 +42,29 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
+  background: #6EBCB0;
+}
+
+/* Custom scrollbar class for slides */
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color: #009CCF rgba(0, 60, 113, 0.1);
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: #009CCF;
+  border-radius: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
   background: #6EBCB0;
 }
 

@@ -47,26 +47,79 @@ The application should communicate these key sections:
 
 Core message: *"We're transforming SSI Strategy from a consulting firm that recommends digital transformation to one that delivers it - instantly, repeatedly, and profitably."*
 
-## Technology Recommendations
+## Technology Stack
 
-Since this is a greenfield project with no existing tech stack:
+- **Framework**: React 18 with Vite build tool
+- **Styling**: Tailwind CSS with SSI Strategy color palette
+- **Animations**: Framer Motion for smooth transitions
+- **Icons**: Lucide React
+- **Charts**: Recharts for data visualizations
+- **Deployment**: GitHub Pages (gh-pages branch)
 
-- **Framework**: Modern SPA framework (React, Vue, or vanilla HTML/CSS/JS for simplicity)
-- **Styling**: Clean, professional design system suitable for executive presentation
-- **Deployment**: Static hosting (Vercel, Netlify, GitHub Pages)
-- **Assets**: Consider data visualizations for metrics and transformation timeline
+### Key Files
+- `src/App.jsx` - Main app with authentication gate
+- `src/components/layout/HorizontalScroller.jsx` - Horizontal scroll container
+- `src/slides/Slide[1-8].jsx` - Individual slide components
+- `src/utils/constants.js` - Password and animation configurations
+- `tailwind.config.js` - SSI color palette
 
 ## Development Workflow
 
-As this is a new project, establish:
-1. Package management and build tooling
-2. Development server setup
-3. Deployment pipeline
-4. Version control (currently not a git repository)
+### Development
+```bash
+npm run dev      # Start dev server at http://localhost:5174/vf_vision/
+npm run build    # Build production bundle
+npm run preview  # Preview production build locally
+```
+
+### Deployment
+```bash
+npm run deploy   # Deploy to GitHub Pages (gh-pages branch)
+```
+
+### Git Repository
+Project is initialized with git. Main branch contains source code.
+The `gh-pages` branch (created by deployment) contains the built site.
 
 ## Key Considerations
 
 - **Audience**: Executive stakeholders, investors, SSI Strategy leadership
 - **Tone**: Professional, forward-thinking, grounded in business outcomes
-- **Accuracy**: All content should align with reference materials in `/reference`
-- **Demonstrable tech capability**: The application itself should exemplify the "tech-first" transformation being proposed
+- **Accuracy**: All content aligns with reference materials in `/reference`
+- **Demonstrable tech capability**: The application exemplifies the "tech-first" transformation being proposed
+
+## Password & Access
+
+**Access Code**: `VelocityFoundry2025!` (stored in `src/utils/constants.js`)
+
+Client-side password protection provides basic access control. For production use with sensitive content, consider server-side authentication.
+
+## Common Maintenance Tasks
+
+### Update Content
+Edit slide components in `src/slides/` and the changes will hot-reload in development.
+
+### Change Password
+Edit `SITE_ACCESS_CODE` in `src/utils/constants.js`
+
+### Modify Colors
+Update the `colors.ssi` object in `tailwind.config.js`
+
+### Adjust Animations
+Edit animation variants in `src/utils/constants.js`
+
+## Navigation System
+
+- **Horizontal scroll**: Snap-scroll with momentum physics
+- **Arrow keys**: Left/right navigation
+- **Progress dots**: Right side with tooltips showing slide titles
+- **Navigation arrows**: Left side with prev/next controls
+- **Mobile**: Converts to vertical scroll on screens < 768px
+
+## Performance Optimizations
+
+- Lazy loading of slide content
+- CSS transforms for animations (GPU-accelerated)
+- Debounced scroll events
+- Framer Motion viewport detection for animation triggers
+- Production bundle is code-split and optimized

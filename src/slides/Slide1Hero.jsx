@@ -33,7 +33,7 @@ const Slide1Hero = () => {
         variants={staggerChildren}
         initial="hidden"
         animate="visible"
-        className="max-w-5xl mx-auto text-center relative z-10"
+        className="max-w-5xl mx-auto text-center relative z-10 py-4"
       >
         <motion.div variants={fadeInUp} className="mb-6 flex justify-center">
           <div className="bg-gradient-to-r from-ssi-ocean to-ssi-turquoise p-4 rounded-2xl">
@@ -45,32 +45,34 @@ const Slide1Hero = () => {
           variants={fadeInUp}
           className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-white via-ssi-turquoise to-ssi-ocean bg-clip-text text-transparent"
         >
-          The 10-Year Window
+          Velocity Foundry
         </motion.h1>
 
         <motion.p
           variants={fadeInUp}
           className="text-2xl md:text-3xl text-ssi-sand mb-8"
         >
-          Life sciences at an inflection point
+          A Transformation Proposal for SSI Strategy
         </motion.p>
 
-        <motion.p
+        <motion.div
           variants={fadeInUp}
           className="text-xl text-ssi-stone max-w-3xl mx-auto mb-12 leading-relaxed"
         >
-          AI and digital workflows will fundamentally reshape operations.
-          Traditional consulting models are becoming obsolete.
-          <span className="block mt-4 text-ssi-turquoise font-semibold">
-            The transformation window is closing.
-          </span>
-        </motion.p>
+          <p className="mb-6">
+            What if we combined SSI Strategy's{' '}
+            <span className="text-white font-medium">people and governance expertise</span>
+          </p>
+          <p className="text-2xl text-ssi-turquoise font-semibold">
+            with <span className="text-white">instant tech delivery</span> — building bespoke solutions in days, not months?
+          </p>
+        </motion.div>
 
         <motion.div
           variants={fadeInUp}
           className="flex items-center justify-center gap-4 text-ssi-ocean"
         >
-          <span className="text-lg font-medium">Discover the Velocity Foundry</span>
+          <span className="text-lg font-medium">Explore the vision</span>
           <motion.div
             animate={{ x: [0, 10, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}

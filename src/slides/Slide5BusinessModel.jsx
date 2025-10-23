@@ -13,9 +13,9 @@ const Slide5BusinessModel = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeInUp}
-          className="text-center mb-16"
+          className="text-center mb-6"
         >
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">
             Business Model
             <span className="block text-transparent bg-gradient-to-r from-ssi-ocean via-ssi-turquoise to-ssi-sunrise bg-clip-text">
               Transformation
@@ -27,13 +27,14 @@ const Slide5BusinessModel = () => {
         </motion.div>
 
         {/* Before/After Comparison */}
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
+        <div className="grid md:grid-cols-2 gap-6 mb-6">
           {/* Traditional Model */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            className="h-full"
           >
             <div className="text-center mb-6">
               <div className="inline-block bg-ssi-stone/20 border border-ssi-stone/50 rounded-full px-6 py-2">
@@ -41,8 +42,8 @@ const Slide5BusinessModel = () => {
               </div>
             </div>
 
-            <Card className="bg-ssi-stone/10 border-ssi-stone/30">
-              <h3 className="text-2xl font-bold text-ssi-stone mb-6 text-center">
+            <Card className="bg-ssi-stone/10 border-ssi-stone/30 h-full flex flex-col">
+              <h3 className="text-xl font-bold text-ssi-stone mb-4 text-center">
                 Linear Revenue
               </h3>
 
@@ -72,7 +73,7 @@ const Slide5BusinessModel = () => {
               </div>
 
               {/* Linear graph visualization */}
-              <div className="mt-6 h-24 flex items-end justify-between">
+              <div className="mt-4 h-20 flex items-end justify-between">
                 {[20, 30, 40, 50, 60].map((height, i) => (
                   <motion.div
                     key={i}
@@ -93,6 +94,7 @@ const Slide5BusinessModel = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            className="h-full"
           >
             <div className="text-center mb-6">
               <div className="inline-block bg-gradient-to-r from-ssi-ocean to-ssi-turquoise rounded-full px-6 py-2">
@@ -100,8 +102,8 @@ const Slide5BusinessModel = () => {
               </div>
             </div>
 
-            <Card className="bg-gradient-to-br from-ssi-ocean/20 to-ssi-turquoise/10 border-ssi-turquoise">
-              <h3 className="text-2xl font-bold text-white mb-6 text-center">
+            <Card className="bg-gradient-to-br from-ssi-ocean/20 to-ssi-turquoise/10 border-ssi-turquoise h-full flex flex-col">
+              <h3 className="text-xl font-bold text-white mb-4 text-center">
                 Exponential Revenue
               </h3>
 
@@ -139,7 +141,7 @@ const Slide5BusinessModel = () => {
               </div>
 
               {/* Exponential graph visualization */}
-              <div className="mt-6 h-24 flex items-end justify-between">
+              <div className="mt-4 h-20 flex items-end justify-between">
                 {[15, 25, 45, 70, 100].map((height, i) => (
                   <motion.div
                     key={i}
@@ -161,11 +163,15 @@ const Slide5BusinessModel = () => {
           whileInView="visible"
           viewport={{ once: true }}
           variants={staggerChildren}
-          className="grid md:grid-cols-4 gap-6"
+          className="grid md:grid-cols-4 gap-4"
         >
           <motion.div variants={fadeInUp}>
             <Card className="text-center hover:border-ssi-ocean/50">
-              <div className="text-4xl font-bold text-ssi-ocean mb-2">💼</div>
+              <div className="flex justify-center mb-3">
+                <div className="bg-ssi-ocean/20 p-3 rounded-xl">
+                  <DollarSign className="w-8 h-8 text-ssi-ocean" />
+                </div>
+              </div>
               <h4 className="font-semibold text-white mb-2">Services</h4>
               <p className="text-sm text-ssi-stone">Higher margin through AI efficiency</p>
             </Card>
@@ -173,7 +179,11 @@ const Slide5BusinessModel = () => {
 
           <motion.div variants={fadeInUp}>
             <Card className="text-center hover:border-ssi-turquoise/50">
-              <div className="text-4xl font-bold text-ssi-turquoise mb-2">🔄</div>
+              <div className="flex justify-center mb-3">
+                <div className="bg-ssi-turquoise/20 p-3 rounded-xl">
+                  <Repeat className="w-8 h-8 text-ssi-turquoise" />
+                </div>
+              </div>
               <h4 className="font-semibold text-white mb-2">Platform Licenses</h4>
               <p className="text-sm text-ssi-stone">Recurring revenue streams</p>
             </Card>
@@ -181,7 +191,11 @@ const Slide5BusinessModel = () => {
 
           <motion.div variants={fadeInUp}>
             <Card className="text-center hover:border-ssi-sunrise/50">
-              <div className="text-4xl font-bold text-ssi-sunrise mb-2">📚</div>
+              <div className="flex justify-center mb-3">
+                <div className="bg-ssi-sunrise/20 p-3 rounded-xl">
+                  <Package className="w-8 h-8 text-ssi-sunrise" />
+                </div>
+              </div>
               <h4 className="font-semibold text-white mb-2">IP Library</h4>
               <p className="text-sm text-ssi-stone">Asset value appreciation</p>
             </Card>
@@ -189,7 +203,11 @@ const Slide5BusinessModel = () => {
 
           <motion.div variants={fadeInUp}>
             <Card className="text-center hover:border-ssi-turquoise/50">
-              <div className="text-4xl font-bold text-ssi-turquoise mb-2">🔧</div>
+              <div className="flex justify-center mb-3">
+                <div className="bg-ssi-turquoise/20 p-3 rounded-xl">
+                  <TrendingUp className="w-8 h-8 text-ssi-turquoise" />
+                </div>
+              </div>
               <h4 className="font-semibold text-white mb-2">Maintenance</h4>
               <p className="text-sm text-ssi-stone">Predictable revenue</p>
             </Card>
@@ -202,10 +220,10 @@ const Slide5BusinessModel = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4, duration: 0.5 }}
-          className="mt-12 bg-gradient-to-r from-ssi-ocean/10 via-ssi-turquoise/10 to-ssi-sunrise/10 border border-ssi-ocean/30 rounded-2xl p-8 text-center"
+          className="mt-6 bg-gradient-to-r from-ssi-ocean/10 via-ssi-turquoise/10 to-ssi-sunrise/10 border border-ssi-ocean/30 rounded-2xl p-6 text-center"
         >
-          <p className="text-2xl text-white font-light italic">
-            Revenue multiplies as delivery costs <span className="text-ssi-turquoise font-semibold">decrease</span>.<br />
+          <p className="text-lg text-white font-light italic">
+            Revenue multiplies as delivery costs <span className="text-ssi-turquoise font-semibold">decrease</span>.
             Each client solution adds to a <span className="text-ssi-sunrise font-semibold">compounding asset base</span>.
           </p>
         </motion.div>

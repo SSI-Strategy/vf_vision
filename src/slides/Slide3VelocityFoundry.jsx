@@ -13,7 +13,7 @@ const Slide3VelocityFoundry = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeInUp}
-          className="text-center mb-16"
+          className="text-center mb-8"
         >
           <div className="inline-flex items-center gap-2 bg-ssi-ocean/20 border border-ssi-ocean rounded-full px-6 py-2 mb-6">
             <Layers className="w-5 h-5 text-ssi-ocean" />
@@ -33,10 +33,10 @@ const Slide3VelocityFoundry = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={staggerChildren}
-          className="flex flex-col md:flex-row items-center justify-center gap-8 mb-16"
+          className="flex flex-col md:flex-row items-center justify-center gap-8 mb-8"
         >
           <motion.div variants={fadeInUp}>
-            <Card className="text-center p-8">
+            <Card className="text-center p-8 min-h-[200px] flex flex-col justify-center">
               <div className="text-4xl font-bold text-ssi-stone mb-2">From</div>
               <div className="text-lg text-ssi-stone/70">Traditional Consulting</div>
               <div className="mt-4 text-sm text-ssi-stone/50">
@@ -53,7 +53,7 @@ const Slide3VelocityFoundry = () => {
           </motion.div>
 
           <motion.div variants={fadeInUp}>
-            <Card className="text-center p-8 bg-gradient-to-br from-ssi-ocean/20 to-ssi-turquoise/20 border-ssi-turquoise/50">
+            <Card className="text-center p-8 bg-gradient-to-br from-ssi-ocean/20 to-ssi-turquoise/20 border-ssi-turquoise/50 min-h-[200px] flex flex-col justify-center">
               <div className="text-4xl font-bold text-white mb-2">To</div>
               <div className="text-lg text-ssi-turquoise font-semibold">Digital Capability Accelerator</div>
               <div className="mt-4 text-sm text-white/80">
@@ -128,11 +128,11 @@ const Slide3VelocityFoundry = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.5 }}
-          className="mt-16 text-center"
+          className="mt-8 text-center"
         >
           <div className="max-w-4xl mx-auto bg-gradient-to-r from-ssi-ocean/10 to-ssi-turquoise/10 border border-ssi-ocean/30 rounded-2xl p-8">
             <p className="text-2xl text-white font-light italic leading-relaxed">
-              "We're transforming SSI Strategy from a consulting firm that{' '}
+              "We could be transforming SSI Strategy from a consulting firm that{' '}
               <span className="text-ssi-stone">recommends</span> digital transformation<br />
               to one that <span className="text-ssi-turquoise font-semibold">delivers it</span> —{' '}
               <span className="text-ssi-sunrise font-semibold">instantly, repeatedly, and profitably</span>."

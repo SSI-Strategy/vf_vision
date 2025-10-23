@@ -3,7 +3,7 @@ import { SLIDES_CONFIG } from '../../utils/constants';
 
 const ProgressIndicator = ({ currentSlide, onSlideClick }) => {
   return (
-    <div className="fixed right-8 top-1/2 -translate-y-1/2 z-50 hidden md:flex flex-col gap-3">
+    <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 flex gap-3 items-center">
       {SLIDES_CONFIG.map((slide, index) => (
         <button
           key={slide.id}
@@ -22,7 +22,7 @@ const ProgressIndicator = ({ currentSlide, onSlideClick }) => {
           />
 
           {/* Tooltip */}
-          <div className="absolute right-6 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
             <div className="bg-ssi-midnight/90 backdrop-blur-sm px-3 py-1.5 rounded-lg whitespace-nowrap border border-ssi-ocean/30">
               <span className="text-xs font-medium text-white">
                 {slide.title}

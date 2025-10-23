@@ -13,7 +13,7 @@ const Slide4CompetitiveAdvantage = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeInUp}
-          className="text-center mb-16"
+          className="text-center mb-8"
         >
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">
             Three Pillars of
@@ -31,11 +31,11 @@ const Slide4CompetitiveAdvantage = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={staggerChildren}
-          className="grid md:grid-cols-3 gap-8 mb-12"
+          className="grid md:grid-cols-3 gap-6 mb-8"
         >
           {/* Pillar 1: Velocity Forge Platform */}
-          <motion.div variants={scaleIn}>
-            <Card className="h-full bg-gradient-to-br from-ssi-ocean/20 to-ssi-ocean/5 border-ssi-ocean hover:border-ssi-ocean/80 transition-all group">
+          <motion.div variants={scaleIn} className="h-full">
+            <Card className="h-full bg-gradient-to-br from-ssi-ocean/20 to-ssi-ocean/5 border-ssi-ocean hover:border-ssi-ocean/80 transition-all group flex flex-col min-h-[400px]">
               <div className="flex justify-center mb-6">
                 <motion.div
                   whileHover={{ rotate: 360 }}
@@ -50,7 +50,7 @@ const Slide4CompetitiveAdvantage = () => {
                 Velocity Forge Platform
               </h3>
 
-              <div className="space-y-3">
+              <div className="space-y-3 flex-grow">
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-ssi-ocean mt-2 flex-shrink-0"></div>
                   <p className="text-ssi-sand text-sm">
@@ -71,7 +71,7 @@ const Slide4CompetitiveAdvantage = () => {
                 </div>
               </div>
 
-              <div className="mt-6 p-3 bg-ssi-ocean/10 rounded-lg border border-ssi-ocean/30">
+              <div className="mt-auto pt-6 p-3 bg-ssi-ocean/10 rounded-lg border border-ssi-ocean/30">
                 <p className="text-xs text-ssi-ocean font-semibold text-center">
                   Citizen Developer Revolution
                 </p>
@@ -80,8 +80,8 @@ const Slide4CompetitiveAdvantage = () => {
           </motion.div>
 
           {/* Pillar 2: Compound Value Effect */}
-          <motion.div variants={scaleIn}>
-            <Card className="h-full bg-gradient-to-br from-ssi-turquoise/20 to-ssi-turquoise/5 border-ssi-turquoise hover:border-ssi-turquoise/80 transition-all group">
+          <motion.div variants={scaleIn} className="h-full">
+            <Card className="h-full bg-gradient-to-br from-ssi-turquoise/20 to-ssi-turquoise/5 border-ssi-turquoise hover:border-ssi-turquoise/80 transition-all group flex flex-col min-h-[400px]">
               <div className="flex justify-center mb-6">
                 <motion.div
                   whileHover={{ rotate: 360 }}
@@ -96,7 +96,7 @@ const Slide4CompetitiveAdvantage = () => {
                 Compound Value Effect
               </h3>
 
-              <div className="space-y-3">
+              <div className="space-y-3 flex-grow">
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-ssi-turquoise mt-2 flex-shrink-0"></div>
                   <p className="text-ssi-sand text-sm">
@@ -117,7 +117,7 @@ const Slide4CompetitiveAdvantage = () => {
                 </div>
               </div>
 
-              <div className="mt-6 p-3 bg-ssi-turquoise/10 rounded-lg border border-ssi-turquoise/30">
+              <div className="mt-auto pt-6 p-3 bg-ssi-turquoise/10 rounded-lg border border-ssi-turquoise/30">
                 <p className="text-xs text-ssi-turquoise font-semibold text-center">
                   Platform Thinking at Scale
                 </p>
@@ -126,8 +126,8 @@ const Slide4CompetitiveAdvantage = () => {
           </motion.div>
 
           {/* Pillar 3: Industry-Specific IP */}
-          <motion.div variants={scaleIn}>
-            <Card className="h-full bg-gradient-to-br from-ssi-sunrise/20 to-ssi-sunrise/5 border-ssi-sunrise hover:border-ssi-sunrise/80 transition-all group">
+          <motion.div variants={scaleIn} className="h-full">
+            <Card className="h-full bg-gradient-to-br from-ssi-sunrise/20 to-ssi-sunrise/5 border-ssi-sunrise hover:border-ssi-sunrise/80 transition-all group flex flex-col min-h-[400px]">
               <div className="flex justify-center mb-6">
                 <motion.div
                   whileHover={{ scale: 1.1 }}
@@ -142,7 +142,7 @@ const Slide4CompetitiveAdvantage = () => {
                 Industry-Specific IP
               </h3>
 
-              <div className="space-y-3">
+              <div className="space-y-3 flex-grow">
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-ssi-sunrise mt-2 flex-shrink-0"></div>
                   <p className="text-ssi-sand text-sm">
@@ -163,7 +163,7 @@ const Slide4CompetitiveAdvantage = () => {
                 </div>
               </div>
 
-              <div className="mt-6 p-3 bg-ssi-sunrise/10 rounded-lg border border-ssi-sunrise/30">
+              <div className="mt-auto pt-6 p-3 bg-ssi-sunrise/10 rounded-lg border border-ssi-sunrise/30">
                 <p className="text-xs text-ssi-sunrise font-semibold text-center">
                   Solve Forever Protocol
                 </p>
